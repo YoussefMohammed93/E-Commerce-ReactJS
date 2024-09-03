@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12.5px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(251 146 60);
+}
+
+.main-padding {
+  padding-left: 125px;
+  padding-right: 125px;
+}
+@media (max-width: 1280px) {
+  .main-padding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .grid-product-page {
+    padding-bottom: 60px !important;
+  }
+}
+@media (max-width: 768px) {
+  .main-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .main-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 3px;
+  left: 50%;
+  bottom: -25%;
+  transform: translate(-50%, -0%);
+}
+
+.active-link {
+  color: rgb(251 146 60) !important;
+}
+
+.cart-img {
+  position: relative;
+  animation: rightt 3s linear infinite;
+}
+
+@keyframes rightt {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: -25px;
+  }
+  50% {
+    right: -45px;
+  }
+  75% {
+    right: -25px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.about-title {
+  font-size: 120px;
+}
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 50px;
+  }
+}
+
+.read-btn svg {
+  position: relative;
+  animation: up-and-down 1s linear infinite;
+}
+
+@keyframes up-and-down {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.map-img {
+  position: relative;
+  max-width: 250px;
+  animation: up-and-down-2 3s linear infinite;
+}
+
+@keyframes up-and-down-2 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.about-paragraph {
+  max-width: 800px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .about-paragraph {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-paragraph {
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .min-h-72-css {
+    height: 30rem !important;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
